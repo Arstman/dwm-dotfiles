@@ -92,14 +92,11 @@ static const char *const autostart[] = {
   "/bin/bash","-c","/home/aaron/.local/share/dwm/scripts/tap-to-click.sh ",NULL,
   "/bin/bash","-c"," /home/aaron/.local/share/dwm/scripts/inverse-scroll.sh ",NULL,
   "/bin/bash","-c"," /home/aaron/.local/share/dwm/scripts/wp-autochange.sh ",NULL,
-  "/bin/bash","-c"," /home/aaron/.local/share/dwm/scripts/dwm-get-dot.sh ",NULL,
   "/bin/bash","-c"," /home/aaron/.local/share/dwm/scripts/dwm-get-cpu.sh ",NULL,
   "nm-applet",NULL,
   "flameshot ",NULL,
   "dunst",NULL,
   // "udiskie","--smart-tray", "--automount",NULL,
-  "xmodmap", "/home/aaron/.Xmodmap",NULL,
-  "xcape","-e","'Mode_switch=Escape'",NULL,
 	NULL /* terminate */
 };
 
@@ -243,7 +240,6 @@ static const char *wpchangecmd[]    = { "/home/aaron/.local/share/dwm/scripts/wp
 static const char *screenshotcmd[]  = { "/home/aaron/.local/share/dwm/scripts/screenshot.sh",  NULL };
 static const char *filemanagercmd[]  = { "/home/aaron/.local/share/dwm/scripts/filemanager.sh",  NULL };
 static const char *roficmd[] = { "rofi", "-show", NULL };
-static const char *rofisearchcmd[] = {"/home/aaron/apps/web-search.sh", NULL};
 
 static Key keys[] = {
 	/* modifier                     key            function                argument */
@@ -257,7 +253,6 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_a,          spawn,          {.v = screenshotcmd } },
 	{ MODKEY,                   XK_equal,          spawn,          {.v = filemanagercmd } },
 	{ MODKEY,                   XK_backslash,          spawn,          {.v = terminalcmd } },
-	{ MODKEY,                       XK_s, spawn,  {.v = rofisearchcmd } },
 	{ MODKEY,                       XK_d, spawn,  {.v = roficmd } },
 	{ 0,                       XK_F9,         togglescratch,  {.v = spcmd1 } },
  { 0, XF86XK_AudioRaiseVolume, spawn, {.v = upvolcmd }  },

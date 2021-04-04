@@ -7,7 +7,39 @@ dwm - dynamic window manager
 
   这是因为一个清爽良好的dwm构建, 所有的改动应该都只在config.def.h里面.
 
-  各个补丁的作用及其说明, 后续我会写明白, 
+
+  使用前把 script 文件夹 放到  $HOME/.local/share/dwm/  目录里面, 没有就新建一个
+
+  当然你也可以用自己的目录.
+
+  顺便说一下, 我现在用的混成器是 picom-jonaburg-git, aur上直接有, 
+
+  非Arch的同学可以去 下载源码编译安装:  
+
+  https://github.com/jonaburg/picom
+
+  另外需要有几个前置安装的软件:
+
+  Sarasa Mono SC Nerd 字体, 经过测试, 我发现只有这个字体目前可以比好地在dwm 的 bar里面显示中文, 其他的source code nerd 或者 Noto Sans Nerd 都不正常
+
+  feh --  显示桌面墙纸
+  flameshot  -- 最好的截图软件
+  dunst  -- 系统通知, 没有这个很多软件无法响应, biru flameshot
+  udisks2  --  外置存储设备如U盘的加载, 如果需要自动加载, 可以下个helper, 比如 udiskie 
+  spacefm  -- 文件浏览器, 你可以换成别的
+  alsa 和 pulse 工具集 -- 系统声卡工具, 另外我装了 pavucontrol , 所以音量调节我用了pulse, 如果你喜欢也可以用 amixer
+  nm-applet --  系统托盘网络配置工具
+
+
+  除此之外, 有其他的软件比如vivladi浏览器, vs code, alacritty 终端, 这些都是我自己常用的, 你可以在config.def.h里面找到相应的命令, 换成你自己的.
+
+## 重要
+  完全退出dwm :   ctrl + shift + super (即win键) + c
+  不退出重启dwm:  ctrl + shift + super + q 
+
+
+
+  各个补丁的作用及其说明, 以及详细的自定义方式,  后续我会写明白, 
 
 
 
