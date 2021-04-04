@@ -55,7 +55,7 @@ get_backlight() {
 
 
 dwm_cpu() {
-	cpu=$(cat $HOME/logs/cpu)
+	cpu=$(cat ~/logs/cpu)
   echo "$CPUCOL $TEXTCOL$cpu"%
 
 }
@@ -100,7 +100,7 @@ export IDENTIFIER="unicode"
 #. "$DIR/dwmbar-functions/dwm_vpn.sh"
 #. "$DIR/dwmbar-functions/dwm_weather.sh"
 
-xsetroot -name "$(dwm_cpu)  $(print_mem)  ^b#111111^  $(print_bat)  $(print_temp)  $(dwm_pulse)  $(get_backlight)  $(dwm_dot)  ^d^   [$(print_date)^d^]"
+xsetroot -name "$(dwm_cpu)  $(print_mem)  ^b#111111^  $(print_bat)  $(print_temp)  $(dwm_pulse)  $(get_backlight)   ^d^   [$(print_date)^d^]"
 
 exit 0
 

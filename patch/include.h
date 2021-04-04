@@ -14,9 +14,7 @@
 #include "bar_wintitleactions.h"
 
 /* Other patches */
-#include "cfacts.h"
 #include "cool_autostart.h"
-#include "dragcfact.h"
 #include "fullscreen.h"
 #include "pertag.h"
 #include "placemouse.h"

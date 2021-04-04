@@ -5,7 +5,7 @@ dwm_cpu() {
 	read -r cpu a b c idle rest < /proc/stat
 	total=$((a+b+c+idle))
 	cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
-	echo "$cpu" >$HOME/logs/cpu
+	echo "$cpu" >~/logs/cpu
 }
 
 while true

@@ -1,4 +1,19 @@
 dwm - dynamic window manager
+
+
+简略说一下, 主要修改的文件是config.def.h,  其中所有带aaron的路径, 你需要改成你自己的用户名,
+
+ 每次make install 之前先检查一下,  如果存在config.h, 先删除掉, 然后make的时候会自动生成, 
+
+  这是因为一个清爽良好的dwm构建, 所有的改动应该都只在config.def.h里面.
+
+  各个补丁的作用及其说明, 后续我会写明白, 
+
+
+
+
+
+
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
 
